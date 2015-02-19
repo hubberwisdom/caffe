@@ -82,3 +82,10 @@ docs/dev
 
 # CMake generated files
 *.gen.cmake
+
+# Local files
+compile.sh
+compile.sh.o*
+*_log.png*
+*.train
+*.test
