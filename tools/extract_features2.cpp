@@ -118,7 +118,7 @@ int feature_extraction_pipeline(int argc, char** argv) {
         << " in the network " << feature_extraction_proto;
   }
 
-vector<FILE*> feature_txt_files(num_features);
+std::vector<FILE*> feature_txt_files(num_features);
 for(size_t i=0; i<num_features; i++) {
 string filename = blob_names[i] + ".txt";
 feature_txt_files[i] = fopen(filename.c_str(), "w");
